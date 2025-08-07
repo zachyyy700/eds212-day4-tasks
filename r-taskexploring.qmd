@@ -38,3 +38,17 @@ skimr::skim(diamonds)
 ```{r}
 GGally::ggpairs(diamonds)
 ```
+
+## ggez plot
+
+```{r}
+# plot dat 
+ggplot(data = diamonds, aes(x = price, y = carat)) + 
+  geom_point()
+```
+
+```{r}
+# histogram
+ggplot(data = diamonds, aes(x = carat)) + 
+  geom_histogram()
+```
