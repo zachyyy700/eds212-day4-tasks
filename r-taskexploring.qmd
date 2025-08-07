@@ -1,0 +1,40 @@
+---
+title: "r-taskexploring"
+author: "zachyloo"
+format: html
+editor: visual
+---
+
+```{r}
+# libraries
+library(tidyverse)
+library(skimr)
+library(GGally)
+```
+
+```{r}
+# view data
+view(diamonds)
+```
+
+## Exploring data
+
+```{r}
+# explore data
+names(diamonds)
+dim(diamonds)
+summary(diamonds)
+```
+
+```{r}
+# pt 2
+head(diamonds)
+tail(diamonds)
+skimr::skim(diamonds)
+```
+
+## Pairs Plot
+
+```{r}
+GGally::ggpairs(diamonds)
+```
